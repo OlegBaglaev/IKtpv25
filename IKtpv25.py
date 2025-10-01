@@ -1,3 +1,17 @@
+# Harjutus 1.1. Muutajad ja sisend
+# 3
+# Kirjuta enda koodis laual olevate kommide arv muutujasse(kommide arv on juhuslik). 
+# Seejärel kuva muutujas olev kommide arv ekraanile kasutades print() käsku.
+# Küsi kasutajalt sisendit, mitu kommi ta soovib laualt ära võtta. 
+# Eemalda soovitud kommide arv laual olevate kommide arvust ja kuva ekraanile, kui palju komme laual nüüd on.
+import random
+kommide_arv = random.randint(10, 50)
+print("Laual on", kommide_arv, "kommi.")
+võetavad_kommid = int(input("Mitu kommi soovid laualt võtta? "))
+kommide_arv -= võetavad_kommid
+print("Nüüd on laual", kommide_arv, "kommi.")
+
+
 
 # 2
 # Mis tüüpi on järgnevad muutujad:
@@ -23,8 +37,4 @@ print(f"Kas_käib_koolis {Kas_käib_koolis} on: {type(Kas_käib_koolis)}")
 # Küsi kasutajalt sisend tema vanuse kohta ning väljasta see ekraanile:
 # “Tere, maailm! Tervitan sind Mati! Sa oled N aastat vana.”
 print("Tere maailm!")
-nimi=input("Sisesta oma nimi").capitalize()#sisend ja ootab enterit
-print(f"Tere maailm! Tervitan sind {nimi}")
-vanus=int(input("Sisesta oma vanus: "))#int teisendab stringi täisarvuks
-print(f"Tere maailm! Tervitan sind {nimi.upper()}, Sa oled {vanus} aastat vana")#upper muudab suurtähed
-print(f"Tere maailm! Tervitan sind {nimi.lower()}, Sa oled {vanus} aastat vana")#lower muudab väiketähed
+
