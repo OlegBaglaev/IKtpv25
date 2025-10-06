@@ -1,4 +1,33 @@
 # Harjutus 1.1. Muutajad ja sisend
+# 6
+# Leidke järgnevast näiteprogrammist loogiline viga:
+# aeg = float(input("Mitu tundi kulus sõiduks? "))
+# teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+# kiirus = aeg / teepikkus
+aeg = float(input("Mitu tundi kulus sõiduks? "))
+teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+kiirus = teepikkus / aeg 
+print("Sinu kiirus oli " + str(kiirus) + " km/h")
+
+# 5.
+# Arvutage Pythoni käsureal, kui pikk on ristkülikukujulise maatüki diagonaal, mille mõõtmed on Nm x Mm. N ja M küsi kasutajalt.
+import math 
+N=float(input("Sisesta maatüki pikkus N (meeter): "))
+M=float(input("Sisesta maatüki pikkus M (meeter): "))
+diagonaal = math.sqrt(N**2 + M**2)
+print(f"Maatüki diagonaal on {diagonaal:.2f} meetrit.")
+
+# 4
+# Puu läbimõõdu arvutamine
+# Kirjuta programm, mis küsib kasutaja käest puu ümbermõõdu ning teatab selle peale puu läbimõõdu.
+import math
+umbermõõt =float(input("Sisesta puu ümbermõõt"))
+labimõõt = umbermõõt / math.pi
+print(f"Puu läbimõõt on {labimõõt:.2f}")
+
+
+
+
 # 3
 # Kirjuta enda koodis laual olevate kommide arv muutujasse(kommide arv on juhuslik). 
 # Seejärel kuva muutujas olev kommide arv ekraanile kasutades print() käsku.
@@ -10,7 +39,6 @@ print("Laual on", kommide_arv, "kommi.")
 võetavad_kommid = int(input("Mitu kommi soovid laualt võtta? "))
 kommide_arv -= võetavad_kommid
 print("Nüüd on laual", kommide_arv, "kommi.")
-
 
 
 # 2
