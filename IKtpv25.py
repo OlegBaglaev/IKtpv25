@@ -65,4 +65,8 @@ print(f"Kas_käib_koolis {Kas_käib_koolis} on: {type(Kas_käib_koolis)}")
 # Küsi kasutajalt sisend tema vanuse kohta ning väljasta see ekraanile:
 # “Tere, maailm! Tervitan sind Mati! Sa oled N aastat vana.”
 print("Tere maailm!")
+nimi = input("Mis on sinu nimi? ")
+print(f"Tere, maailm! Tervitan sind {nimi}!")
+vanus = input("Kui vana sa oled? ")
+print(f"Tere, maailm! Tervitan sind {nimi}! Sa oled {vanus} aastat vana.")
 
