@@ -1,5 +1,44 @@
 
 # Harjutus 1.1. Muutajad ja sisend
+# 10.
+# Pitsa
+# # Võtsite sõpradega (näiteks P inimest) suure pitsa, mille hind on 12,90 €.
+# # Jätate teenindajale 10% jootraha.
+# # Koosta programm, mis arvutab, kui palju igaüks peab maksma.
+P = int(input("Sisesta oma grupi liikmete arv"))
+Summa_inimese_kohta = (12.90 * 1.10) / P
+print("Kõik peavad maksma:", round(Summa_inimese_kohta), "€")
+
+
+# 9.
+# Arvutame kolmnurga ümbermõõdu. Loo kolm täisarvulist muutujat a, b, c. 
+# Kasuta valem, mis arvutab kolmnurga ümbermõõdu (P=a+b+c)
+a = int(input("Sisesta a"))
+b = int(input("Sisesta b"))
+c = int(input("Sisesta c"))
+P = a + b + c
+print("Perimeteer on:", P)
+
+# 8.
+# Joonista samasugune konn
+print("     @..@")
+print("    (----)")
+print("   ( >__< )")
+print("   ^^ ~~ ^^")
+
+
+
+# 7.
+# Koostada programm, mis arvutab aritmeetilise keskmise suvalisest etteantud 5 täis arvust.
+# Leia nende arvude summa, jagatuna kasutaja poolt sisestatud arvuga, täisarvuline osa ja jääk.
+arv1 = int(input("Sisesta esimene täisarv"))
+arv2 = int(input("Sisesta teine täisarv"))
+arv3 = int(input("Sisesta kolme täisarv"))
+arv4 = int(input("Sisesta neljas täisarv"))
+arv5 = int(input("Sisesta viies täisarv"))
+summa = arv1 + arv2 + arv3 + arv4 +arv5
+Aritmeetilinekeskmine = summa/5
+print("Aritmeetiline keskmine:", Aritmeetilinekeskmine)
 # 6
 # Leidke järgnevast näiteprogrammist loogiline viga:
 # aeg = float(input("Mitu tundi kulus sõiduks? "))
