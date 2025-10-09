@@ -1,7 +1,8 @@
+
 # Töö 1.2 Iseseisev töö "Vigade otsing -1"
 import math
 print("Ruudu karakteristikud")
-a=float(input("Sisesta ruudu külje pikkus => "))
+a=int(input("Sisesta ruudu külje pikkus => "))
 S=a**2
 print("Ruudu pindala", S)
 P=4*a
