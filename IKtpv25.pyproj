@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ff6973b9-9407-42a7-a7f8-b8c6066097bf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>IKtpv25.py</StartupFile>
+    <StartupFile>Vigade otsing.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   <ItemGroup>
     <Compile Include="..\IKtpv25.py">
       <Link>IKtpv25.py</Link>
+    </Compile>
+    <Compile Include="Vigade otsing.py">
+      <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
