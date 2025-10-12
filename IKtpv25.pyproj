@@ -24,6 +24,9 @@
     <Compile Include="..\IKtpv25.py">
       <Link>IKtpv25.py</Link>
     </Compile>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Vigade otsing.py">
       <SubType>Code</SubType>
     </Compile>
