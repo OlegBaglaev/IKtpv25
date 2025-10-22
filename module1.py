@@ -170,31 +170,132 @@
 # Küsi inimeselt poes eraldi kas ta soovib osta piima, saia, leiba jne. 
 # Loo juhuslikud hinnad ja küsi mitu tükki tahad osta, kui tahad. Teata, mis summa maksma läheb(Kuva ekraanil tšekk).
 
-import random
-hind1 = hind2 = hind3 = 0
-sai = input("Kas te soovite osta sai? ").capitalize()
-if sai=="Jah":
-    mitu = int(input("Mitu saiad te soovite osta?: "))
-    hind1 = round(mitu * random.uniform(0.6, 2.0),2)
-else:
-    print("Ei soovi saia")
-piim = input("Kas te soovite osta piima? ").capitalize()
-if piim=="Jah":
-    mitu2 = int(input("Mitu Piima te soovite osta: "))
-    hind2 = round(mitu2 * random.uniform(1.0, 2.5),2)
-else:
-    print("Ei soovi piima")
-leib = input("Kas te soovite osta leib? ").capitalize()
-if leib=="Jah":
-    mitu3 = int(input("Mitu leiba te soovite osta?: "))
-    hind3 = round(mitu3 * random.uniform(0.5, 1.5),2)
-else:
-    print("Ei soovi leiba")
+# import random
+# hind1 = hind2 = hind3 = 0
+# sai = input("Kas te soovite osta sai? ").capitalize()
+# if sai=="Jah":
+#     mitu = int(input("Mitu saiad te soovite osta?: "))
+#     hind1 = round(mitu * random.uniform(0.6, 2.0),2)
+# else:
+#     print("Ei soovi saia")
+# piim = input("Kas te soovite osta piima? ").capitalize()
+# if piim=="Jah":
+#     mitu2 = int(input("Mitu Piima te soovite osta: "))
+#     hind2 = round(mitu2 * random.uniform(1.0, 2.5),2)
+# else:
+#     print("Ei soovi piima")
+# leib = input("Kas te soovite osta leib? ").capitalize()
+# if leib=="Jah":
+#     mitu3 = int(input("Mitu leiba te soovite osta?: "))
+#     hind3 = round(mitu3 * random.uniform(0.5, 1.5),2)
+# else:
+#     print("Ei soovi leiba")
 
-print("Teie tšekk:")
-print(f"Saiad: {hind1} EUR")
-print(f"Piim: {hind2} EUR")
-print(f"Leib: {hind3} EUR")
-kokku = hind1 + hind2 + hind3
-print(f"Kokku: {kokku} EUR")
+# print("Teie tšekk:")
+# print(f"Saiad: {hind1} EUR")
+# print(f"Piim: {hind2} EUR")
+# print(f"Leib: {hind3} EUR")
+# kokku = hind1 + hind2 + hind3
+# print(f"Kokku: {kokku} EUR")
+
+
+# 9 Ruut
+# Kasutaja sisestab ruudu küljed ning programm tuvastab kas tegemist saab olla ruuduga.
+
+# a = float(input("Sisesta ruudu külje a pikkus: "))
+# b = float(input("Sisesta ruudu külje b pikkus: "))
+# if a == b and a > 0 and b > 0:
+#     print("See on ruut")
+# else:
+#     print("See ei ole ruut")
+
+# 10 Matemaatika
+# Kasutaja sisestab kaks arvu ning programm küsib kasutajalt, mis tehet ta soovib (+-*/) ning viib kasutaja valiku ellu.
+
+# a = float(input("Sisesta esimene arv: "))
+# b = float(input("Sisesta teine arv: "))
+# tehe = input("Sisesta tehe (+, -, *, /): ")
+# if tehe == "+":
+#     tulemus = a + b
+#     print(f"Tulemus: {tulemus}")
+# elif tehe == "-":
+#         tulemus = a - b
+#         print(f"Tulemus: {tulemus}")
+# elif tehe == "*":
+#         tulemus = a * b
+#         print(f"Tulemus: {tulemus}")
+# elif tehe == "/":
+#     if b != 0:
+#             tulemus = a / b
+#             print(f"Tulemus: {tulemus}")
+#     else:
+#         print("Nulliga jagamine ei ole lubatud")
+# else:
+#     print("Tundmatu tehe")
+
+# 11 Juubel
+# Kasutaja sisestab oma sünnipäeva ja sinu programm ütleb, kas tegemist on juubeliga.
+
+# import datetime
+# sünnipäev_str = input("Sisesta oma sünnipäev (pp.kk.aaaa): ")
+# try:
+#     sünnipäev = datetime.datetime.strptime(sünnipäev_str, "%d.%m.%Y")
+#     tänane_kuupäev = datetime.datetime.now()
+#     vanus = tänane_kuupäev.year - sünnipäev.year
+#     if (tänane_kuupäev.month, tänane_kuupäev.day) < (sünnipäev.month, sünnipäev.day):
+#         vanus -= 1
+#     if vanus % 5 == 0:
+#         print(f"Palju õnne! Sul on juubel - {vanus} aastat!")
+#     else:
+#         print(f"Sul on {vanus} aastat.")
+# except ValueError:
+#         print("Palun sisesta kuupäev õiges formaadis (pp.kk.aaaa).")
+
+# 12 Müük
+# Kasutaja sisestab toote hinna. Kui see on hinnaga kuni 10€, saab ta allahindlust 10%. Üle 10€ tooted saavad soodukat 20%.
+
+# # hind = float(input("Sisesta toote hind: "))
+# if hind < 10:
+#     soodus_hind = round(hind * 0.9,2)
+#     print (f"Soodushind on {soodus_hind} EUR") 
+# elif hind >= 10:
+#     soodus_hind = round(hind * 0.8,2)
+#     print (f"Soodushind on {soodus_hind} EUR")
+
+# 13 Jalgpalli meeskond
+# Sa pead looma programmi, mis kontrollib kas kandideerija sobib antud meeskonda.
+# Vanus peab jääma vahemikku 16-18 ning lubatud on ainult meessugu.
+# Täienda programmi nii, et kui kandideerija on naissoost, siis vanust üldse ei küsita
+
+# sugu = input("Sisesta sugu (mees/naine): ").lower()
+# if sugu == "mees":
+#     vanus = float(input("Sisesta vanus: "))
+#     if 16 <= vanus <= 18:
+#         print("Sobid meeskonda!")
+#     else:
+#         print("Kahjuks ei sobi meeskonda.")
+# elif sugu == "naine":
+#     print("Kahjuks ei sobi meeskonda.")
+
+# 14
+# Busside logistika
+# Olgu meil vaja transportida teatud arv inimesi bussidega, milles on teatud arv kohti.
+# Mitu bussi on vaja selleks, et kõik inimesed kohale saaksid, ja mitu inimest on viimases bussis (eeldusel, 
+# et eelmised on kõik täiesti täis)? Kirjuta programm, mis küsib inimeste arvu ja busside suuruse ning lahendab seejärel selle ülesande.
+
+# inimeste_arv = int(input("Sisesta inimeste arv: "))
+# bussi_suurus = int(input("Sisesta bussi suurus: "))
+
+# busside_arv = inimeste_arv // bussi_suurus
+
+# if inimeste_arv %bussi_suurus !=0:
+#     busside_arv += 1
+#     viimases_bussis = inimeste_arv % bussi_suurus
+# else:
+#     viimases_bussis = bussi_suurus
+    
+    
+# print(f"Vaja on {busside_arv} bussi.")
+    
+    
 
