@@ -298,4 +298,22 @@
 # print(f"Vaja on {busside_arv} bussi.")
     
     
-
+print("Tere! Olen sinu uus sõber - Python!")
+nimi = input("Mis on sinu nimi?: ")
+print(nimi, "oi kui ilus nimi!")
+try:
+    küsimus = int(input(f"{nimi}, kas leian Sinu keha indeksi? (0 - ei, 1 - jah): "))
+    if küsimus == 1:
+        print("indeksi leidmine käib nüüd!")
+        pikkus = float(input("Sisesta oma pikkus sentimeetrites "))
+        mass   = float(input("Sisesta oma mass kilogrammides "))
+        KMI    = mass / (0.01 * pikkus) ** 2
+        print(f"{nimi}! Sinu kehamassiindeks on {round(KMI, 1)}")
+        if KMI < 16:
+           print("Sinu kehamassiindeks näitab alakaalu (Tervisele ohtlik alakaal)")
+    elif küsimus == 0:
+         print("Okei, võib-olla järgmine kord!")
+    else:
+        print("Palun sisesta 0 või 1!")
+except:
+    print("Palun sisesta kehtiv number (0 või 1)!")
