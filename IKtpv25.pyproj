@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ff6973b9-9407-42a7-a7f8-b8c6066097bf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Töö 2.3.py</StartupFile>
+    <StartupFile>3.1töö.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <Link>IKtpv25.py</Link>
     </Compile>
     <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="3.1töö.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Töö 2.3.py">
