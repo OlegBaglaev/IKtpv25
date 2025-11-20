@@ -1,14 +1,44 @@
 #replace()
-# import msvcrt
-# täht=""
-# while True:
-#     t=msvcrt.getwch()
-#     print(t.replcace(t,"*"),end="",flush=True)
-#     täht+=t
-#     if t== '\r':
-#         break
-# print()
-# print(täht)
+import msvcrt
+täht=""
+while True:
+    t=msvcrt.getwch()
+    print(t.replcace(t,"*"),end="",flush=True)
+    täht+=t
+    if t== '\r':
+        break
+    else:
+        täht+=t
+print()
+print(täht)
+
+nimed=[]
+for i in range(5):
+    nimi=input(f"Sisesta viis nimed{i+1}:  ")
+    for nimi in range(5):
+        while True:
+            muut = input("\nKas soovite mõnda nime muuta? (jah/ei): ").lower()
+    if muut=="ei":
+        break
+    if muut=="jah":
+        print("\nPraegune nimekiri:", nimed)
+        index = int(input("Sisestage muudetava nime number (1–5): ")) - 1
+        
+        if 0 <= index < len(nimed):
+            uus_nimi = input("Sisestage uus nimi: ")
+            nimed[index] = uus_nimi
+            print("Nimi on edukalt muudetud!")
+            print("Uuendatud nimekiri:“, names")
+        else:
+            print("Viga: sellist numbrit pole.")
+    else:
+        print("Sisestage ‚jah‘ või ‚ei‘.")
+
+print("Töö on lõpetatud.")
+
+     
+
+
 
 
 
