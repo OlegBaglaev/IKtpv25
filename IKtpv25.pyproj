@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ff6973b9-9407-42a7-a7f8-b8c6066097bf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>4.1.py</StartupFile>
+    <StartupFile>4.1 teema.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,7 +30,7 @@
     <Compile Include="3.1töö.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="4.1.py">
+    <Compile Include="4.1 teema.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Töö 2.3.py">
