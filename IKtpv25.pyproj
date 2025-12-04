@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ff6973b9-9407-42a7-a7f8-b8c6066097bf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>4.1 teema.py</StartupFile>
+    <StartupFile>Tavalinefail.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -33,6 +33,8 @@
     <Compile Include="4.1 teema.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Moodulifile.py" />
+    <Compile Include="Tavalinefail.py" />
     <Compile Include="Töö 2.3.py">
       <SubType>Code</SubType>
     </Compile>
